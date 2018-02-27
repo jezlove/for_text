@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+	<head>
+		<title>For Text</title>
+		<hta:application border="thick" borderstyle="complex" />
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<script type="text/javascript" language="javascript" src="ForText.js"></script>
+		<link rel="stylesheet" type="text/css" href="ForText.css" />
+	</head>
+	<body>
+		<div>
+			<form>
+				<fieldset>
+					<legend><code>$i</code></legend>
+					<input id="iUse" type="checkbox" checked="checked" />
+					<input id="iMin" type="text" value="0" />
+					<input id="iMax" type="text" value="5" />
+				</fieldset>
+				<fieldset>
+					<legend><code>$j</code></legend>
+					<input id="jUse" type="checkbox" checked="checked" />
+					<input id="jMin" type="text" value="0" />
+					<input id="jMax" type="text" value="5" />
+				</fieldset>
+				<fieldset>
+					<legend><code>$k</code></legend>
+					<input id="kUse" type="checkbox" checked="checked" />
+					<input id="kMin" type="text" value="0" />
+					<input id="kMax" type="text" value="5" />
+				</fieldset>
+				<textarea id="inputTextField">i = $i, j = $j, k = $k</textarea>
+			</form>
+			<button onclick="javascript:generate();">Generate</button>
+		</div>
+		<div>
+			<code id="outputTextField"></code>
+		</div>
+	</body>
+</html>
